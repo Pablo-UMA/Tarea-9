@@ -81,4 +81,17 @@ public class Array_Asociativo extends Object {
 		}
 		return res;
 	}
+	
+	public boolean containsKey(String clave){
+		Nodo aux = new Nodo();
+		boolean res=false;
+		aux=act;
+		while(aux.clave!=clave&&aux.clave!=null){
+			aux=aux.sig;
+		}
+		if(aux!=null){
+			res=true;
+		}
+		return res;
+	}
 }

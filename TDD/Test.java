@@ -44,4 +44,12 @@ public class Test {
 		assertEquals("luis", a.getOrElse("nombre", "defecto"));
 	}
 	
+	@org.junit.Test
+	public void removeTest() throws Exception {
+		Array_Asociativo b = new Array_Asociativo();
+		a.put("nombre", "luis");
+		assertEquals(b, a.remove("nombre"));
+	}
+	
+	
 }
