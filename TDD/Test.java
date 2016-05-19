@@ -51,5 +51,26 @@ public class Test {
 		assertEquals(b, a.remove("nombre"));
 	}
 	
+	@org.junit.Test
+	public void removeTest2() throws Exception {
+		a.put("nombre", "luis");
+		assertEquals(a, a.remove("edad"));
+	}
 	
+	@org.junit.Test
+	public void containsKeyTest() {
+		a.put("nombre", "luis");
+		assertEquals(true,a.containsKey("nombre"));
+	}
+	
+	@org.junit.Test
+	public void sizeTest()  {
+		a.put("nombre", "luis");
+		assertEquals(1,a.size());
+	}
+	
+	@org.junit.Test
+	public void sizeTest2()  {
+		assertEquals(0,a.size());
+	}
 }

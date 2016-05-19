@@ -54,6 +54,7 @@ public class Array_Asociativo extends Object {
 		Nodo aux = new Nodo();
 		int res=0;
 		while(aux!=null){
+			aux=aux.sig;
 			res++;
 		}
 		return res;
